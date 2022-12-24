@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/frgment_first_Layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:background="@color/back_gray"
+    tools:context=".UserInputActivity">
+
+    <ScrollView
+        android:id="@+id/scrollview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/step_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/layout_bg"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="مرحله ۱ - ورود اطلاعات:"
+                android:textColor="@color/neutral3_blue" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/neutral3_blue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.50"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/LoginTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="فامیلی فارسی"
+                        android:textColorHint="@color/neutral3_blue"
+                        app:hintTextColor="@color/neutral3_blue">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/TIET_faLastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:fontFamily="@font/vazir"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:inputType="text"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:nextFocusForward="@+id/TIET_enFirstName"
+                            android:singleLine="true"
+                            android:textColor="@color/neutral3_blue"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.50"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/LoginTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="نام فارسی"
+                        android:textColorHint="@color/neutral3_blue"
+                        app:hintTextColor="@color/neutral3_blue">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/TIET_faFirstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:fontFamily="@font/vazir"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:inputType="text"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:nextFocusForward="@+id/TIET_faLastName"
+                            android:singleLine="true"
+                            android:textColor="@color/neutral3_blue"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.50"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/LoginTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="فامیلی انگلیسی"
+                        android:textColorHint="@color/neutral3_blue"
+                        app:hintTextColor="@color/neutral3_blue">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/TIET_enLastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:fontFamily="@font/vazir"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:inputType="text"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:nextFocusForward="@+id/TIET_nationalCode"
+                            android:singleLine="true"
+                            android:textColor="@color/neutral3_blue"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.50"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/LoginTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="نام انگلیسی"
+                        android:textColorHint="@color/neutral3_blue"
+                        app:hintTextColor="@color/neutral3_blue">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/TIET_enFirstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:fontFamily="@font/vazir"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:inputType="text"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:nextFocusForward="@+id/TIET_enLastName"
+                            android:singleLine="true"
+                            android:textColor="@color/neutral3_blue"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.50"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/LoginTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="شماره شناسنامه"
+                        android:textColorHint="@color/neutral3_blue"
+                        app:hintTextColor="@color/neutral3_blue">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/TIET_birthCertificateCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:fontFamily="@font/vazir"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:nextFocusForward="@+id/TIET_telephone"
+                            android:singleLine="true"
+                            android:textColor="@color/neutral3_blue"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:digits="0123456789"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.50"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/LoginTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="کد ملی"
+                        android:textColorHint="@color/neutral3_blue"
+                        app:hintTextColor="@color/neutral3_blue">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/TIET_nationalCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:fontFamily="@font/vazir"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:nextFocusForward="@+id/TIET_birthCertificateCode"
+                            android:singleLine="true"
+                            android:textColor="@color/neutral3_blue"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:digits="0123456789"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.50"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/LoginTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="کدپستی"
+                        android:textColorHint="@color/neutral3_blue"
+                        app:hintTextColor="@color/neutral3_blue">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/TIET_postalCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:fontFamily="@font/vazir"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:nextFocusForward="@+id/TIET_provinceName"
+                            android:singleLine="true"
+                            android:textColor="@color/neutral3_blue"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:digits="0123456789"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.50"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/LoginTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="شماره موبایل"
+                        android:textColorHint="@color/neutral3_blue"
+                        app:hintTextColor="@color/neutral3_blue">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/TIET_telephone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:fontFamily="@font/vazir"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:inputType="number"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:nextFocusForward="@+id/TIET_postalCode"
+                            android:singleLine="true"
+                            android:textColor="@color/neutral3_blue"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:digits="0123456789"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.50"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/LoginTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="شهر"
+                        android:textColorHint="@color/neutral3_blue"
+                        app:hintTextColor="@color/neutral3_blue">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/TIET_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:fontFamily="@font/vazir"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:inputType="text"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:nextFocusForward="@+id/TIET_birthDate"
+                            android:singleLine="true"
+                            android:textColor="@color/neutral3_blue"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.50"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/LoginTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="استان"
+                        android:textColorHint="@color/neutral3_blue"
+                        app:hintTextColor="@color/neutral3_blue">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/TIET_provinceName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:fontFamily="@font/vazir"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="no"
+                            android:inputType="text"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:nextFocusForward="@+id/TIET_city"
+                            android:singleLine="true"
+                            android:textColor="@color/neutral3_blue"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.50"
+                    android:orientation="vertical">
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.50"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/LoginTextInputLayoutStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="تاریخ تولد میلادی"
+                        android:textColorHint="@color/neutral3_blue"
+                        app:helperText="در قالب 1990/01/20"
+                        app:helperTextTextColor="@color/purple_200"
+                        app:hintTextColor="@color/neutral3_blue">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/TIET_birthDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLength="20"
+                            android:textColor="@color/neutral3_blue"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:focusable="true"
+                            android:fontFamily="@font/vazir"
+                            android:imeOptions="actionDone"
+                            android:importantForAutofill="no"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.50"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/toggleButtonForeign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:enabled="false"
+                        android:saveEnabled="true"
+                        android:textColor="@color/white"
+                        android:textOff="ایرانی"
+                        android:textOn="خارجی" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.50"
+                    android:orientation="vertical">
+                    <ToggleButton
+                        android:id="@+id/toggleButtonGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:enabled="true"
+                        android:saveEnabled="true"
+                        android:text="مرد"
+                        android:textColor="@color/white"
+                        android:textOff="زن"
+                        android:textOn="مرد" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="0.50"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/toggleButtonTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:enabled="true"
+                        android:saveEnabled="true"
+                        android:textColor="@color/white"
+                        android:textOff="گواهی غیر-تستی (08)"
+                        android:textOn="گواهی تستی (01)" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.50"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/toggleButtonServer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:enabled="true"
+                        android:saveEnabled="true"
+                        android:textColor="@color/white"
+                        android:textOff="raahbartrust API"
+                        android:textOn="Mock REST API" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_NextActivity"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/blue_button"
+                android:text="مرحله بعد"
+                android:textColor="@color/white"
+                android:layout_marginHorizontal="10dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.shuhart.stepview.StepView
+        android:id="@+id/step_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollview1"
+        app:sv_animationType="Line"
+        app:sv_doneCircleColor="@color/primary_blue"
+        app:sv_doneCircleRadius="12dp"
+        app:sv_doneStepLineColor="@color/primary_blue"
+        app:sv_doneStepMarkColor="@color/white"
+        app:sv_nextStepLineColor="@color/white"
+        app:sv_nextTextColor="@color/white"
+        app:sv_selectedCircleColor="@color/primary_blue"
+        app:sv_selectedCircleRadius="12dp"
+        app:sv_selectedStepNumberColor="@color/white"
+        app:sv_selectedTextColor="@color/white"
+        app:sv_stepLineWidth="1dp"
+        app:sv_stepNumberTextSize="12sp"
+        app:sv_stepPadding="4dp"
+        app:sv_stepViewStyle="@style/StepView"
+        app:sv_typeface="@font/vazir" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

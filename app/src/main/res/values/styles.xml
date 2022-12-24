@@ -1,0 +1,59 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:fontFamily">@font/vazir</item>
+        <item name="fontFamily">@font/vazir</item>
+    </style>
+
+    <style name="editbox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#000000</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/neutral3_blue</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="android:textColorHint">@color/neutral3_blue</item>
+        <item name="android:backgroundTint" tools:targetApi="lollipop">@color/neutral3_blue</item>
+        <item name="android:textColor">@color/neutral3_blue</item>
+
+        <item name="colorControlActivated">@color/neutral3_blue</item>
+        <item name="colorAccent">@color/neutral3_blue</item>
+
+        <item name="hintTextColor">@color/neutral3_blue</item>
+        <item name="materialButtonOutlinedStyle">@color/neutral3_blue</item>
+
+        <item name="android:textCursorDrawable">@color/neutral3_blue</item>
+        <item name="android:textSelectHandle">@color/neutral3_blue</item> // For pointer normal state and copy text state
+        <item name="android:textSelectHandleLeft">@color/neutral3_blue</item>
+        <item name="android:textSelectHandleRight">@color/neutral3_blue</item>
+    </style>
+
+    <style name="just_toast">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#fff</item>
+        <item name="stFont">@font/vazir</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">@color/neutral1_blue</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">4dp</item>
+        <item name="stStrokeColor">#fff</item>
+        <item name="stLength">LONG</item>
+        <item name="stRadius">12dp</item>
+    </style>
+
+    <style name="error_toast">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#b61827</item>
+        <item name="stFont">@font/vazir</item>
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#fff</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">4dp</item>
+        <item name="stStrokeColor">#b61827</item>
+        <item name="stLength">LONG</item>
+        <item name="stRadius">8dp</item>
+    </style>
+
+</resources>
