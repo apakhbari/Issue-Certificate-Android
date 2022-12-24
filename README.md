@@ -1,6 +1,6 @@
 # Issue-Certificate-Android
 
-![ascii_Issue_Certificate_Android.png.png](ascii_Issue_Certificate_Android.png.png)
+![ascii_Issue_Certificate_Android.png](ascii_Issue_Certificate_Android.png)
 
 ---
 
