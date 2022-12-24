@@ -8,11 +8,8 @@ Android APP for Creating CSR and issuing Certificate, using raahbartrust.ir api 
 
 ---
 
-## Developed by APA
+## Developed by APA, 2021
 
-### copyright © 2021-2022 all rights reserved
-
-<br>
 <br>
 
 ![ascii_apa.png](ascii_apa.png)
